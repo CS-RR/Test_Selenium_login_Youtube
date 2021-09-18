@@ -18,7 +18,7 @@ namespace TestConSelenium
                 driver.FindElement(By.Id("search-icon-legacy")).SendKeys(Keys.Enter);
                 IWebElement buttonlog = driver.FindElement(By.XPath("/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[3]/div[2]/ytd-button-renderer"));
                 buttonlog.Click();
-                driver.FindElement(By.Id("identifierId")).SendKeys("tucorreo@.com");
+                driver.FindElement(By.Id("identifierId")).SendKeys("tucorreo@.com");//Escribe el correo.
                 IWebElement buttonnext = driver.FindElement(By.Id("identifierNext"));
                 buttonnext.Click();
             }
